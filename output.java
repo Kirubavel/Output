@@ -55,14 +55,8 @@ public class Json {
 
             Pattern p = Pattern.compile(Regex);
             Matcher m = p.matcher(fileData.get(i));
-            System.out.println(fileData.get(i) + " is ");
-            if (m.matches() == true) {
-                System.out.println("valid Expression");
-            } else {
-                System.out.println("Invalid Expression");
-
-            }
-
+            System.out.println(fileData.get(i) + " is " +m.matches());
+           
         }
     }
 }
